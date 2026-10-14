@@ -1,0 +1,430 @@
+{
+  "title": "Self State Aware Autonomy for Disconnected Driving",
+  "version": "0.1",
+  "date": "2026-10-13",
+  "authors": [
+    {
+      "name": "Wonsik Choi",
+      "email": "janefather@gmail.com",
+      "orcid": "0009-0001-4263-9772"
+    },
+    {
+      "name": "Jeongin Choi",
+      "email": "cjeongin024@gmail.com"
+    }
+  ],
+  "method": "deterministic state based planning with explicit self state and resource gate",
+  "performance_claim": "illustrative execution only; not measured hardware or learned AI advantage",
+  "checks": "passed",
+  "result": {
+    "example": "network_disconnected_autonomous_vehicle",
+    "inputs": "illustrative",
+    "scope": "high-level grid route planning; no lane, speed, braking or collision dynamics",
+    "normal_budget": {
+      "initial_energy_wh": 20.0,
+      "network": "unavailable",
+      "old_route_accepted": false,
+      "destination_route_accepted": true,
+      "selected_terminal": "destination",
+      "selected_cell": [
+        4,
+        2
+      ],
+      "selected_route": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "selected_route_accepted": true,
+      "essential_control_accepted": true,
+      "final_energy_wh": 13.3,
+      "reserve_wh": 4.0,
+      "self_state": {
+        "owned_equipment": [
+          "onboard_perception",
+          "onboard_planner",
+          "vehicle_controller"
+        ],
+        "unavailable_services": [
+          "network"
+        ],
+        "onboard_perception": "valid_in_grid_model",
+        "remaining_energy_wh": 13.3,
+        "reserve_wh": 4.0,
+        "selected_terminal": "destination",
+        "unresolved": [
+          "lane_and_braking_dynamics",
+          "continuous_collision_avoidance"
+        ],
+        "evidence_revision": 1
+      },
+      "ledger": [
+        {
+          "kind": "PROPOSE",
+          "revision": 0,
+          "route": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "task_wh": 4.0,
+          "overhead_wh": 0.5
+        },
+        {
+          "kind": "OBSERVATION_UPDATE",
+          "revision": 1,
+          "network": "unavailable",
+          "blocked_cell": [
+            2,
+            2
+          ],
+          "onboard_perception": "valid"
+        },
+        {
+          "kind": "DENY",
+          "revision": 1,
+          "action": "stale_route",
+          "task_wh": 4.0,
+          "overhead_wh": 0.5,
+          "before_wh": 20.0,
+          "after_wh": 20.0,
+          "valid": false,
+          "proposed_revision": 0
+        },
+        {
+          "kind": "PROPOSE",
+          "revision": 1,
+          "route": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "terminal": "destination",
+          "task_wh": 6.0,
+          "overhead_wh": 0.5
+        },
+        {
+          "kind": "COMMIT",
+          "revision": 1,
+          "action": "offline_destination_route",
+          "task_wh": 6.0,
+          "overhead_wh": 0.5,
+          "before_wh": 20.0,
+          "after_wh": 13.5,
+          "valid": true,
+          "proposed_revision": 1
+        },
+        {
+          "kind": "COMMIT",
+          "revision": 1,
+          "action": "essential_control_one_interval",
+          "task_wh": 0.2,
+          "overhead_wh": 0.0,
+          "before_wh": 13.5,
+          "after_wh": 13.3,
+          "valid": true,
+          "proposed_revision": 1
+        },
+        {
+          "kind": "SELF_STATE",
+          "revision": 1,
+          "owned_equipment": [
+            "onboard_perception",
+            "onboard_planner",
+            "vehicle_controller"
+          ],
+          "unavailable_services": [
+            "network"
+          ],
+          "onboard_perception": "valid_in_grid_model",
+          "remaining_energy_wh": 13.3,
+          "reserve_wh": 4.0,
+          "selected_terminal": "destination",
+          "unresolved": [
+            "lane_and_braking_dynamics",
+            "continuous_collision_avoidance"
+          ],
+          "evidence_revision": 1
+        }
+      ]
+    },
+    "limited_budget": {
+      "initial_energy_wh": 10.0,
+      "network": "unavailable",
+      "old_route_accepted": false,
+      "destination_route_accepted": false,
+      "selected_terminal": "refuge",
+      "selected_cell": [
+        1,
+        1
+      ],
+      "selected_route": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_route_accepted": true,
+      "essential_control_accepted": true,
+      "final_energy_wh": 7.3,
+      "reserve_wh": 4.0,
+      "self_state": {
+        "owned_equipment": [
+          "onboard_perception",
+          "onboard_planner",
+          "vehicle_controller"
+        ],
+        "unavailable_services": [
+          "network"
+        ],
+        "onboard_perception": "valid_in_grid_model",
+        "remaining_energy_wh": 7.3,
+        "reserve_wh": 4.0,
+        "selected_terminal": "refuge",
+        "unresolved": [
+          "lane_and_braking_dynamics",
+          "continuous_collision_avoidance"
+        ],
+        "evidence_revision": 1
+      },
+      "ledger": [
+        {
+          "kind": "PROPOSE",
+          "revision": 0,
+          "route": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "task_wh": 4.0,
+          "overhead_wh": 0.5
+        },
+        {
+          "kind": "OBSERVATION_UPDATE",
+          "revision": 1,
+          "network": "unavailable",
+          "blocked_cell": [
+            2,
+            2
+          ],
+          "onboard_perception": "valid"
+        },
+        {
+          "kind": "DENY",
+          "revision": 1,
+          "action": "stale_route",
+          "task_wh": 4.0,
+          "overhead_wh": 0.5,
+          "before_wh": 10.0,
+          "after_wh": 10.0,
+          "valid": false,
+          "proposed_revision": 0
+        },
+        {
+          "kind": "PROPOSE",
+          "revision": 1,
+          "route": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "terminal": "destination",
+          "task_wh": 6.0,
+          "overhead_wh": 0.5
+        },
+        {
+          "kind": "DENY",
+          "revision": 1,
+          "action": "offline_destination_route",
+          "task_wh": 6.0,
+          "overhead_wh": 0.5,
+          "before_wh": 10.0,
+          "after_wh": 10.0,
+          "valid": true,
+          "proposed_revision": 1
+        },
+        {
+          "kind": "PROPOSE",
+          "revision": 1,
+          "route": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "terminal": "refuge",
+          "task_wh": 2.0,
+          "overhead_wh": 0.5
+        },
+        {
+          "kind": "COMMIT",
+          "revision": 1,
+          "action": "offline_refuge_route",
+          "task_wh": 2.0,
+          "overhead_wh": 0.5,
+          "before_wh": 10.0,
+          "after_wh": 7.5,
+          "valid": true,
+          "proposed_revision": 1
+        },
+        {
+          "kind": "COMMIT",
+          "revision": 1,
+          "action": "essential_control_one_interval",
+          "task_wh": 0.2,
+          "overhead_wh": 0.0,
+          "before_wh": 7.5,
+          "after_wh": 7.3,
+          "valid": true,
+          "proposed_revision": 1
+        },
+        {
+          "kind": "SELF_STATE",
+          "revision": 1,
+          "owned_equipment": [
+            "onboard_perception",
+            "onboard_planner",
+            "vehicle_controller"
+          ],
+          "unavailable_services": [
+            "network"
+          ],
+          "onboard_perception": "valid_in_grid_model",
+          "remaining_energy_wh": 7.3,
+          "reserve_wh": 4.0,
+          "selected_terminal": "refuge",
+          "unresolved": [
+            "lane_and_braking_dynamics",
+            "continuous_collision_avoidance"
+          ],
+          "evidence_revision": 1
+        }
+      ]
+    }
+  }
+}

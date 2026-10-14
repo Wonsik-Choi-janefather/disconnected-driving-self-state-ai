@@ -1,0 +1,166 @@
+Date: Tue, 13 Oct 2026 03:32:23 -0500
+From: WON SIK CHOI <janefather@gmail.com>
+To: sales@x.ai
+Cc: cjeongin024@gmail.com
+Subject: Request for research partnership contact: self-state-aware, resource-constrained AI
+
+Dear xAI Team,
+
+Could you direct this joint research proposal to the appropriate research partnership or autonomous-agent engineering contact? We are seeking a focused proof-of-concept collaboration in self-state-aware execution, resource accounting, and action authorization during communication loss and equipment failure. If another channel handles external research proposals, we would appreciate your guidance.
+
+The full proposal and preliminary collaboration terms follow below, with English technical case studies and reproducibility materials attached. The current examples are symbolic simulations; a joint proof of concept would define and evaluate domain-specific integration requirements.
+
+Best regards,
+Wonsik Choi and Jeongin Choi
+Independent Researchers
+janefather@gmail.com | cjeongin024@gmail.com
+Wonsik Choi ORCID: 0009-0001-4263-9772
+
+
+Joint Research Proposal and Preliminary Collaboration Terms
+
+
+Intended partners: NASA/JPL autonomous exploration teams and Tesla/xAI/SpaceX autonomous driving, robotics, and onboard AI engineering teams.
+
+
+Proposers
+Wonsik Choi — Research Lead and Independent Researcher
+Email: janefather@gmail.com
+ORCID: 0009-0001-4263-9772
+
+Jeongin Choi — Co-Researcher
+Email: cjeongin024@gmail.com
+
+
+Proposed technology: A self-state-aware, fail-closed autonomous execution architecture for communication loss, equipment failure, and extreme resource constraints.
+
+
+Status: This document presents our proposed collaboration framework and preferred terms. All specific arrangements remain subject to further discussion and a separate written agreement.
+
+
+1. Research Concept and International Engagement
+
+
+We propose an autonomous AI architecture that maintains an explicit model of its own equipment, available resources, accumulated damage, and unresolved conditions. When communication is lost or equipment fails, the system uses its remaining capabilities to compose alternative actions, assess their resource requirements, and authorize execution.
+
+
+The central objective is to enable an autonomous system to recognize its own changing limitations and adapt to situations for which a complete response sequence has not been written in advance.
+
+
+Two initial application areas are proposed:
+
+
+Interstellar exploration: Equipment failure combined with loss of contact with Earth, requiring onboard recovery planning and preservation of essential spacecraft functions.
+
+
+Autonomous driving: Network loss during operation, requiring continued onboard assessment, revised route planning, or a feasible minimal-risk response.
+
+
+
+
+Our methodology has also been extended to computational work in synthetic biology and minimal-cell analysis. At the invitation of Dr. John I. Glass of the J. Craig Venter Institute, our joint research is scheduled for presentation at the 6th Minimal Cell Virtual Workshop on 21 October 2026, with Jeongin Choi presenting. This invitation provides an international forum for expert discussion of the methodology and opportunities for further collaboration.
+
+
+2. Phase One — Proof of Concept and Joint Research
+
+
+Research scope and deliverables
+The initial collaboration would define a focused simulation project covering communication loss, equipment degradation, resource shortages, and combinations of these conditions.
+
+
+Proposed deliverables include:
+
+
+An explicit self-state model and action-authorization interface.
+
+Executable simulation cases and reproducible results.
+
+A ledger recording equipment status, resource consumption, deferred actions, and decision evidence.
+
+Comparative evaluation against agreed baseline systems.
+
+A report identifying demonstrated capabilities, remaining limitations, and integration requirements.
+
+
+
+
+Success criteria, project duration, milestones, and evaluation conditions would be agreed before the project begins.
+
+
+Remote research arrangement
+Research would be conducted remotely from a location selected by the researchers. Relocation to the United States and routine onsite attendance would not be required. Any necessary visits would be separately agreed.
+
+
+Fixed monthly research support for each researcher
+The sponsoring partner would provide separate fixed monthly research-support payments to Wonsik Choi and Jeongin Choi, paid individually and directly to each researcher. Each researcher's monthly support would exceed the applicable local statutory minimum-wage benchmark. The individual payment amounts, benchmark, currency, payment schedule, and treatment of taxes would be agreed in advance.
+
+
+AI infrastructure
+The sponsoring partner would cover the full cost of agreed project-related access to current high-performance generative AI services and enterprise-grade APIs.
+
+
+Equipment
+The sponsoring partner would provide two current-generation Samsung Galaxy tablets for research monitoring, architectural sketches, documentation, and collaboration.
+
+
+3. Phase Two — Advisory Engagement and Commercialization
+
+
+Following successful completion of the agreed proof of concept, the parties would negotiate a separate advisory and commercialization agreement.
+
+
+Independent senior technical advisory role
+Wonsik Choi would serve as an Independent Senior Technical Advisor, with a fixed retainer and responsibilities defined by agreed outputs and consultation needs. The arrangement would preserve independent research activity and would not require routine office attendance.
+
+
+Dedicated office
+The sponsoring partner would fund the lease and maintenance of a dedicated office in a city selected by the researcher, with a minimum usable area of approximately 33 square metres, equivalent to 10 pyeong.
+
+
+Commercialization royalty
+We propose a 10% royalty on:
+
+
+Net commercialization profits attributable to the agreed technology; and
+
+Proceeds from third-party licensing of the agreed technology or associated project rights.
+
+
+
+
+The royalty base, attribution method, allowable deductions, reporting obligations, payment intervals, and verification rights would be defined in the final agreement. The same revenue stream would not be counted twice.
+
+
+4. Intellectual Property
+
+
+Background intellectual property
+Pre-existing theories, models, architectures, resource-accounting methods, software, and documentation would be identified in a background-IP schedule.
+
+
+Wonsik Choi's independently owned background IP would remain entirely his property. Any jointly owned background materials would remain with their existing rights holders. Participation would not automatically transfer these rights to the sponsoring partner.
+
+
+For materials supplied specifically for the project, the partner would receive a limited, non-exclusive evaluation license for the agreed proof-of-concept activities. Any existing public licenses would continue to apply to the materials covered by those licenses.
+
+
+Project-generated intellectual property
+Ownership of newly developed, partner-specific implementation code and associated patent rights may be assigned to the sponsoring partner under the final agreement, subject to the agreed commercialization royalty.
+
+
+General-purpose improvements to the underlying architecture and reusable research tools would be identified separately. They would not automatically fall within a blanket transfer of partner-specific implementation rights.
+
+
+Publication rights, confidentiality, and the researchers' rights to continue independent research would also be expressly agreed.
+
+
+5. Negotiation and Institutional Arrangements
+
+
+These terms represent our preferred starting position for collaboration. Research scope, support levels, advisory compensation, royalties, and project-generated IP arrangements may be adjusted by mutual agreement.
+
+
+For NASA/JPL, the appropriate institutional collaboration and funding mechanism would be determined with the relevant contracting or partnership office. Commercial advisory and royalty arrangements would be negotiated separately with participating companies where applicable.
+
+
+Research independence and retention of existing background-IP ownership are proposed as foundational principles of participation. No funding, appointment, equipment provision, IP transfer, or commercialization commitment is established by this proposal alone.
